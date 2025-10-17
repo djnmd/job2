@@ -1,1 +1,20 @@
+import numpy as np
 
+# 创建一维数组 temp
+temp = np.arange(48)
+
+print("原始一维数组 temp:")
+print(temp)
+print(f"temp的形状: {temp.shape}\n")
+
+# 1. 创建三维数组 (4, 3, 4)
+three_dim_array = temp.reshape(4, 3, 4)
+print("三维数组 (4, 3, 4):")
+print(three_dim_array)
+print(f"三维数组形状: {three_dim_array.shape}\n")
+
+# 2. 创建二维数组 (6, 8)
+two_dim_array = temp.reshape(6, 8)
+print("二维数组 (6, 8):")
+print(two_dim_array)
+print(f"二维数组形状: {two_dim_array.shape}")
